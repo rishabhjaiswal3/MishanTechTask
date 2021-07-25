@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgb(164, 180, 226);
+    font-family:"Ubuntu", sans-serif;
+}
+input{
+    border-radius: 10px;;
+}
+.Main-heading{
+    font-family: "lora", sans-serif;
+    font-size: 30px;
+    margin:auto;
+    margin-top:40px;
+    background-color:rgb(217, 238, 217);
+    border-radius:40px;
+    padding:20px;
+    width:70%;
+}
+#feeOptionField{
+    text-align:left;
+    padding:20px;
+    width:85vw;
+    height: 60px;
+    margin-top:30px;
+    background-color: rgb(216, 221, 231);
+}
+.dropdown-feeOption{
+    display:none;
+    width:80vw;
+    margin-left:8%;
+}
+.dropdown-feeOption a{
+    display: block;
+    text-decoration: none;
+    text-align:left;
+    width:84vw;
+    z-index:3;
+    padding:20px;
+    margin:auto;
+    color:rgb(105, 76, 76);
+    background-color:white;
+}
+.dropdown-feeOption a:hover{
+    background-color: rgb(195, 202, 218);
+    color:black;
+}
+
+#countriesList ,#CourseOptionList,#ListOfLevels{
+    display:inline;
+    width:24vw; 
+    padding: 20px;
+    background-color:rgb(195, 202, 218);
+}
+#CountryList,#CoursesList,#LevelList{
+    position:absolute;
+    width:22vw;
+    z-index: 1;
+    margin-left:34vw;
+    background-color:white;
+}
+#feeTypes{
+    position:absolute;
+}
+.Country,.Courses,.AllLevel{
+    margin:20px;
+    text-align: left;
+}
+.label{
+    width:30%;
+    margin-left:8vw;
+    margin-right:20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display:inline-block;
+    padding:20px;
+    background-color:rgb(217, 238, 217);
+}
+
+.Container{
+    width: 80%;
+}
+#Result{
+    position:relative;
+    width:25vw;
+    padding:20px;
+    height:220px;
+    border-radius: 10px;
+    margin-left:-15vw;
+    top:21px;
+    background-color:rgb(217, 238, 217);;
+}
+#finalResultlabel{
+    background-color:rgb(217, 238, 217);
+}
+.FinalValue{
+    font-weight: bold;
+    font-family: 'lora' sans-serif;
+    background-color:transparent;
+    padding:10px;
+    font-size:7vw;
+}
+.MainContainer{
+    display: none;
+    margin-left:-20px;
+}
+#Result p{
+    text-decoration: underline;
+    background-color: transparent;
+    font-size:20px;
+}

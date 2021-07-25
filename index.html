@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Noto+Sans+TC:wght@300;400&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>MishanTech Task</title>
+
+</head>
+<body>
+    
+    <h1 class="Main-heading">Fee Structure for Courses in the University</h1>
+
+
+        <!---------- Start OF Fee Structure  and selection of Fee Type---------------------------------------------------------------->    
+        <div class="feeStructure">
+            <input id="feeOptionField" readonly placeholder="Click to Select Fee Type First..." />
+            <div id="feeTypes" class="dropdown-feeOption">
+                <a class="FeeType">Application Fee</a>
+                <a class="FeeType">Exam Fee</a>
+            </div>
+        </div>
+        <!------------End OF Fee Structure  and selection of Fee Type---------------------------------------------------------------->
+        
+        <!----------- Start of Selection Country ----------------------------------------->
+
+    <div class="MainContainer">
+        <div class="Container">
+
+            <div class="Country">
+                <div class="label">Country</div>
+                <input id="countriesList" readonly placeholder="Select Country">
+                <div id="CountryList"> </div>
+            </div> 
+        
+        <!----------- End of Selection Country ------------------------------------------>
+    
+        <!---------------- Start of All Courses ------------------>
+            <div class="Courses">
+                <div class="label">Courses</div>
+                <input id="CourseOptionList" readonly placeholder="Select Course">
+                <div id="CoursesList"> </div>
+            </div> 
+    
+        <!---------------- End of All Courses -------------------->
+
+        <!------------Start of AllLevel ----------------------------------->
+        
+            <div class="AllLevel">
+                <div class="label">Levels </div>
+                <input id="ListOfLevels" readonly placeholder="Select Level">
+                <div id="LevelList"> </div>
+            </div> 
+    
+        </div>
+    <!------------End of AllLevel-------------------------------------->
+    
+    <!---------- Start of Final Fee Result----------------->
+        
+        <div id="Result">
+            <p>Fee</p>
+            <div class="FinalValue"> </div>
+        </div>
+    <!-------------End of Final Fee Result----------------->
+    
+    </div>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+   
+</body>
+</html>
