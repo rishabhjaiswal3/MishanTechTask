@@ -30,12 +30,18 @@ function CheckForResult(){
     if(feeOptionsButton.value!="" && countrySelect.value!="" && courseSelect.value!="" && LevelSelect.value!=""){
 
         if(feeOptionsButton.value == "Application Fee")
-        {    
-            CourseFeeAmount.textContent = data[feeOptionsButton.value][countrySelect.value]["ALL_COURSES"][LevelSelect.value].amount;
+        {   
+            let gst  = data[feeOptionsButton.value][countrySelect.value]["ALL_COURSES"][LevelSelect.value].Gst;
+        //    console.log(gst);
+            amount = data[feeOptionsButton.value][countrySelect.value]["ALL_COURSES"][LevelSelect.value].amount;
+            CourseFeeAmount.textContent = amount+(amount*gst)/100;
         }
         else
         {
-            CourseFeeAmount.textContent = data[feeOptionsButton.value][countrySelect.value]["ALL_COURSES"]["ALL_LEVEL"].amount;
+            let gst  = data[feeOptionsButton.value][countrySelect.value]["ALL_COURSES"]["ALL_LEVEL"].Gst;
+        //    console.log(gst);
+            amount = data[feeOptionsButton.value][countrySelect.value]["ALL_COURSES"]["ALL_LEVEL"].amount;
+            CourseFeeAmount.textContent = amount+(amount*gst)/100;
         }
     }
 }

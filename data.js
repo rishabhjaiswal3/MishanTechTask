@@ -4,28 +4,32 @@ data ={
             "ALL_COURSES":{
                     "ALL_LEVEL":
                     {
-                    "amount":400
+                    "amount":400,
+                    "Gst":18
                     }
             }
         },
         "FOREIGN":{
             "ALL_COURSES":{
                 "ALL_LEVEL":{
-                "amount":100
+                "amount":100,
+                "Gst":28
                 }
             }
         },
         "NRI":{
             "ALL_COURSES":{
                 "ALL_LEVEL":{
-                    "amount":600
+                    "amount":600,
+                    "Gst":28
                 }
             }
         },
         "SAARC":{
             "ALL_COURSES":{
                "ALL_LEVEL":{
-                    "amount":600
+                    "amount":600,
+                    "Gst":18
                 }
             }
         }
@@ -34,29 +38,35 @@ data ={
         "INDIAN":{
             "ALL_COURSES":{
                 "UG":{
-                    "amount":200
+                    "amount":200,
+                    "Gst":18
                 },
                 "UG-DIPLOMA":{
-                "amount":300
+                "amount":300,
+                "Gst":18
                 },
                 "PG":{
-                "amount":500
+                "amount":500,
+                "Gst":18
                 }
             }
+            
         },
         "FOREIGN":{
             "ALL_COURSES":{
                 "UG":{
-                    "amount":400
+                    "amount":400,
+                    "Gst":28
                 },
                 "UG-DIPLOMA":{
-                    "amount":400
+                    "amount":400,
+                    "Gst":28
                 },
                 "PG":{
-                    "amount":700
+                    "amount":700,
+                    "Gst":28
                 }
             }
         }
     }
 }
-    
